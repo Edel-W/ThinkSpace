@@ -1,0 +1,28 @@
+h1 {
+    color:  var(--primary);
+}
+
+.about_content {
+    margin: 8rem auto;
+    width: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+p, ul{
+    color: var(--text);
+    font-size: 1.5rem;
+
+}
+
+ul {
+    text-decoration: dotted;
+
+}

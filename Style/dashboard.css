@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--primary);
+    margin-top: 100px;
+}
+
+#motto {
+    font-size: 25px;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.search_form {
+    margin: 20px auto;
+    width: 900px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 4px 8px 0.5px rgb(201, 152, 249);
+    display: flex;
+    gap: 20px;
+}
+
+#search_box {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: 8px;
+}
+
+
+#search_box:focus {    
+    border: 1px solid var(--primary_dark);
+    outline: none;
+}
+
+#search_btn {
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    font-weight: bold;
+}
+
+#search_btn:hover {
+    background-color: rgb(202, 201, 201);
+    cursor: pointer;
+}
+
+#addNote_btn {
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
+#addNote_btn:hover {
+    background-color: var(--primary_dark);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
+#emptyState {
+    color: var(--text);
+}
+
+.notes_grid {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 3rem auto;
+}
+
+.notes_card {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px 0.5px rgb(175, 102, 248);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--text);
+    padding: 10px 20px;
+}

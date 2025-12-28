@@ -1,0 +1,136 @@
+.hero_section {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#header_h1 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color:  var(--primary);
+}
+
+#hero_p {
+    font-size: 1.5rem;
+    color: rgb(216, 215, 215);
+}
+
+img {
+    width: 400px;
+    display: block;
+    margin: 2px auto;
+}
+
+#hero_cta {
+    display: block;
+    width: 5rem;
+    margin: 20px auto;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 8px;
+    width: 10rem;
+    color: rgb(216, 215, 215);
+    background-color: var(--primary);
+    font-size: 1rem;
+}
+
+#hero_cta:hover {
+    background-color: var(--primary_dark);
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(216, 215, 215);
+}
+
+.howItWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: var(--text);
+}
+
+#steps {
+    margin-top: 1rem;
+    width: 700px;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.services_container {
+    margin: 5rem auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.services {
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px 0.5px rgb(175, 102, 248);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 350px; 
+    font-size: 1.2rem;
+    line-height: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services img {
+    display: block;
+    width: 5rem;
+    margin: 20px auto;
+}
+
+.services:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 4px 8px 0.5px rgb(161, 70, 252);
+}
+
+/* Media Queries*/
+
+@media (max-width: 960px) {
+ 
+}
+
+@media (max-width: 670px) {
+    .nav_bar {
+        display: none;
+    }
+
+    .hamburger_btn {
+        display: block;
+    }
+    .howItWorks {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+    }
+    .services_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

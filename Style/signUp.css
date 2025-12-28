@@ -1,0 +1,83 @@
+h1 {
+    color: var(--primary);
+}
+
+h2 {
+    margin-top: 8rem;
+    font-size: 2rem;
+    color:var(--primary);
+    text-align: center;
+}
+
+.signUp_form {
+    margin: 20px auto;
+    background-color: #333333;
+    border: 1px solid rgb(178, 192, 239);
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px 0.5px rgb(192, 137, 247);
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: var(--text);
+}
+
+#textBox {
+    margin: 2px ;
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(178, 192, 239);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(204, 204, 249);
+}
+
+/* #textbox:active {
+    border: 1px solid rgb(115, 143, 235);
+} */
+
+
+#signUp_btn{
+    display: block;
+    width: 5rem;
+    margin: 20px auto;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 8px;
+    width: 10rem;
+    color: white;
+    background-color: var(--primary);
+    font-size: 1rem;
+}
+
+#signUp_btn:hover {
+    background-color: var(--primary_dark);
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
+
+/* Media Queries*/
+
+@media (max-width: 960px) {
+ 
+}
+
+@media (max-width: 670px) {
+    .nav_bar {
+        display: none;
+    }
+
+    .hamburger_btn {
+        display: block;
+    }
+
+
+}
