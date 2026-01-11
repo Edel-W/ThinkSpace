@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThinkSpace - Home </title>
-    <link rel="stylesheet" href="Style/main.css">
-    <link rel="stylesheet" href="Style/logIn.css">
-</head>
-<body>
-    <header >
-        <div>
-            <h1>ThinkSpace</h1>
-        </div>
-        <div class="nav_bar">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="home.html#service_section">Services</a></li>
-                <li><a href="signUp.html"><button id="nav_signUp_btn">Sign up</button></a></li>
-            </ul>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThinkSpace - Home</title>
+    <link rel="stylesheet" href="Style/main.css" />
+    <link rel="stylesheet" href="Style/logIn.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>ThinkSpace</h1>
+      </div>
+      <div class="nav_bar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="home.html#service_section">Services</a></li>
+          <li>
+            <a href="signUp.html"
+              ><button id="nav_signUp_btn">Sign up</button></a
+            >
+          </li>
+        </ul>
+      </div>
 
-        <button class="hamburger_btn">
-            <div class="hamburger_line"></div>
-            <div class="hamburger_line"></div>
-            <div class="hamburger_line"></div>
-        </button>
+      <button class="hamburger_btn">
+        <div class="hamburger_line"></div>
+        <div class="hamburger_line"></div>
+        <div class="hamburger_line"></div>
+      </button>
 
-        <div class="mobile_menu " >
-              <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li><a>Services</a></li>
-                <li><a href="signUp.html"><button id="nav_signUp_btn">Sign up</button></a></li>
-            </ul>
-        </div>
+      <div class="mobile_menu">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li><a>Services</a></li>
+          <li>
+            <a href="signUp.html"
+              ><button id="nav_signUp_btn">Sign up</button></a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <h2>Log in</h2>
-    <form method="post" action="PHP/signUp.php" class="logIn">
-        <label> Username: </label>
-        <input type="text" name="username" id="textBox"> 
-        <label> Password: </label>
-        <input type="text" name="password" id="textBox"> 
-        <p id="frgt_password"><a>Forgot password?</a></p>
-        <input type="submit" value="Log in" id="logIn_btn">
+    <form method="post" action="PHP/logIn.php" class="logIn">
+      <label> Username: </label>
+      <input type="text" name="username" id="textBox" />
+      <label> Password: </label>
+      <input type="password" name="password" id="textBox" />
+      <p id="frgt_password"><a>Forgot password?</a></p>
+      <input type="submit" value="Log in" id="logIn_btn" />
     </form>
 
     <script src="JS/main.js"></script>
-</body>
+  </body>
 </html>
